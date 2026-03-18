@@ -231,6 +231,102 @@
       padding-bottom: 1px;
     }
 
+    /* ── Articolo ── */
+    .article-section {
+      animation: fadeUp 0.8s ease both;
+      padding-top: 1rem;
+    }
+
+    .article-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dim);
+      cursor: pointer;
+      margin-bottom: 3rem;
+      border: none;
+      background: none;
+      font-family: 'EB Garamond', serif;
+      transition: color 0.2s;
+      padding: 0;
+    }
+
+    .article-back:hover { color: var(--gold); }
+
+    .article-header {
+      margin-bottom: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .article-category {
+      font-size: 0.68rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 1.2rem;
+    }
+
+    .article-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .article-subtitle {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    .article-meta {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.72rem;
+      color: #444;
+      letter-spacing: 0.1em;
+    }
+
+    .article-body {
+      max-width: 620px;
+    }
+
+    .article-body p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.9;
+      margin-bottom: 1.6rem;
+    }
+
+    .article-body h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--text);
+      margin: 2.5rem 0 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .article-body .firma {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
     /* ── Chi sono ── */
     .chisono-section {
       animation: fadeUp 0.8s ease both;
@@ -482,57 +578,26 @@
       </div>
 
       <div class="posts" id="posts">
-        <article class="post" data-category="Analisi">
+        <article class="post" data-category="Analisi" onclick="showArticle('lega-sud')">
           <div class="post-meta">
             <span class="post-category">Analisi</span>
-            <p class="post-date">12 Marzo 2026</p>
-            <p class="post-readtime">5 min di lettura</p>
-          </div>
-          <div>
-            <h2 class="post-title">Il potere e la sua crisi: riflessioni sul sistema</h2>
-            <p class="post-excerpt">Le democrazie occidentali attraversano una fase di profonda trasformazione. I vecchi equilibri si sgretolano, mentre nuove forze ridisegnano la mappa del potere politico globale.</p>
-            <span class="post-link">Leggi →</span>
-          </div>
-        </article>
-
-        <article class="post" data-category="Opinione">
-          <div class="post-meta">
-            <span class="post-category">Opinione</span>
-            <p class="post-date">8 Marzo 2026</p>
-            <p class="post-readtime">7 min di lettura</p>
-          </div>
-          <div>
-            <h2 class="post-title">Populismo: fenomeno passeggero o nuova normalità?</h2>
-            <p class="post-excerpt">Dall'America latina all'Europa, i movimenti populisti hanno conquistato consensi trasversali. Ma cosa ci dicono davvero sul rapporto tra cittadini e istituzioni?</p>
-            <span class="post-link">Leggi →</span>
-          </div>
-        </article>
-
-        <article class="post" data-category="Geopolitica">
-          <div class="post-meta">
-            <span class="post-category">Geopolitica</span>
-            <p class="post-date">1 Marzo 2026</p>
+            <p class="post-date">18 Marzo 2026</p>
             <p class="post-readtime">6 min di lettura</p>
           </div>
           <div>
-            <h2 class="post-title">Europa al bivio: sovranità o integrazione?</h2>
-            <p class="post-excerpt">Il dibattito sull'identità europea non è mai stato così acceso. Tra spinte nazionaliste e visioni federaliste, il continente cerca una risposta alle sfide del XXI secolo.</p>
+            <h2 class="post-title">La Lega al Sud in Calabria</h2>
+            <p class="post-excerpt">Perché un'idea nata al Nord ha trovato casa in Calabria. C'è una domanda che mi sono sentito fare mille volte, spesso con un sorriso storto: «Ma tu, calabrese, leghista?».</p>
             <span class="post-link">Leggi →</span>
           </div>
         </article>
+      </div>
+    </div>
 
-        <article class="post" data-category="Società">
-          <div class="post-meta">
-            <span class="post-category">Società</span>
-            <p class="post-date">22 Febbraio 2026</p>
-            <p class="post-readtime">4 min di lettura</p>
-          </div>
-          <div>
-            <h2 class="post-title">Giovani e politica: disillusione o nuova partecipazione?</h2>
-            <p class="post-excerpt">Le nuove generazioni sembrano distanti dalla politica tradizionale. Eppure i movimenti giovanili globali dimostrano un impegno civile più vivo che mai.</p>
-            <span class="post-link">Leggi →</span>
-          </div>
-        </article>
+    <!-- ARTICOLO -->
+    <div id="section-articolo" class="section">
+      <div class="article-section">
+        <button class="article-back" onclick="showSection('blog')">← Torna al blog</button>
+        <div id="article-content"></div>
       </div>
     </div>
 
@@ -624,6 +689,64 @@
   </footer>
 
   <script>
+    const articles = {
+      'lega-sud': {
+        category: 'Analisi',
+        date: '18 Marzo 2026',
+        readtime: '6 min di lettura',
+        title: 'La Lega al Sud in Calabria',
+        subtitle: 'Perché un\'idea nata al Nord ha trovato casa in Calabria',
+        body: `
+          <p>C'è una domanda che mi sono sentito fare mille volte, spesso con un sorriso storto: «Ma tu, calabrese, leghista?». Come se la geografia fosse un destino, come se appartenere al Sud significasse automaticamente votare contro se stessi. Come se la Lega fosse ancora quella del Po, delle ampolle, del <em>Roma ladrona</em>.</p>
+          <p>Chi ragiona così non ha capito cosa è successo dal 2013. Matteo Salvini viene eletto segretario federale della Lega Nord il 15 dicembre 2013, vincendo le primarie con l'82% dei voti contro il fondatore storico Umberto Bossi. È un terremoto silenzioso. Il partito che aveva fatto del Nord contro Roma la propria ragione d'esistere cambia pelle in una notte.</p>
+          <p>Chiamato a risollevare un partito che alle politiche di febbraio aveva toccato i minimi storici, Salvini imprimerà una svolta storica alla Lega. Ma la vera rivoluzione è geografica e spirituale insieme. Il congresso del maggio 2017 sancisce la svolta nazionale: lo slogan della campagna vincente è «Prima gli Italiani!», senza alcun riferimento al Nord. Salvini spiega ai militanti che «se un abruzzese o un siciliano mi viene a chiedere una mano, io non gli dico che è fuori dallo Statuto della Lega».</p>
+          <p>Un abruzzese. Un siciliano. Un calabrese.</p>
+
+          <h3>Il partito del territorio, non del campanile</h3>
+          <p>La Lega che conosco io non è un partito di latitudini. È un partito di princìpi.</p>
+          <p>Sicurezza. Legalità. Identità. Decoro urbano. Il verde delle strade, la cura dei quartieri, il presidio del territorio. Sono valori che non appartengono al Nord né al Sud: appartengono a chi vuole vivere in un posto che funziona, in una comunità che si rispetta.</p>
+          <p>In Calabria questi valori non sono meno urgenti che a Milano. Anzi, chi vive qui sa cosa significa l'assenza dello Stato, il degrado lasciato a se stesso, la legalità trattata come optional. Proprio per questo la Lega parla al Sud, non nonostante le sue idee, ma grazie a esse.</p>
+          <p>Il «Prima gli Italiani» non è uno slogan da bar. È una dichiarazione di priorità: prima vengono i cittadini, le loro strade, le loro case, la loro sicurezza. Tutto il resto è di contorno, o una conseguenza di queste fondamenta.</p>
+
+          <h3>La vita di partito</h3>
+          <p>Qui voglio essere onesto su cosa intendo quando dico che sono leghista.</p>
+          <p>Non è tifare una squadra. Non è seguire un leader perché va di moda. È qualcosa di più intimo e più esigente.</p>
+          <p>Yukio Mishima, scrittore giapponese, uno degli spiriti più lucidi e scomodi del Novecento, sosteneva che l'impegno politico vero non è separabile dall'impegno totale della propria persona. Non si può credere in qualcosa a metà. O ci si mette dentro con tutto quello che si è — il tempo, l'energia, la reputazione, il rischio — oppure si è semplici spettatori travestiti da militanti.</p>
+          <p>Corneliu Codreanu, nel suo <em>Per i legionari</em>, descriveva la vita di partito come una scuola di formazione dell'uomo prima ancora che del politico: la comunità militante come luogo dove si impara la disciplina, la lealtà, il sacrificio quotidiano dell'interesse personale in nome di qualcosa di più grande. Indipendentemente da tutto il resto della sua storia e del suo tempo, questo concetto — la militanza come formazione integrale — è qualcosa che riconosco nella mia esperienza.</p>
+          <p>Ho preso la prima tessera della Lega a sedici anni. Non per seguire una moda, non per fare carriera. Perché avevo visto Salvini a Lamezia Terme nel 2015 e avevo capito che stava dicendo cose vere, cose che toccavano la realtà che conoscevo. Da allora ho imparato che fare politica sul serio significa portare le istanze della gente comune — le buche nelle strade, i lampioni spenti, il parco giochi abbandonato, la piazza degradata — fino ai luoghi dove si decide. Non è una moda. È lavoro. È presenza.</p>
+
+          <h3>Perché la Lega funziona in Calabria?</h3>
+          <p>La risposta è semplice, anche se scomoda per chi preferisce le narrazioni facili.</p>
+          <p>La Lega funziona in Calabria perché parla di cose reali a gente reale. Parla di sicurezza a chi la sicurezza non la dà per scontata. Parla di legalità a chi sa cosa significa vivere in un territorio dove la legge è spesso negoziabile. Parla di identità e di orgoglio a chi è stanco di sentirsi dire che il Sud è un problema da gestire invece di una risorsa da valorizzare.</p>
+          <p>Nel dicembre 2014 Salvini fonda «Noi con Salvini» come soggetto politico a sostegno del segretario nel Centro e nel Sud Italia, dando una strutturazione territoriale attraverso coordinatori locali. Non era un'operazione di facciata. Era la consapevolezza che le idee giuste non hanno confini regionali.</p>
+          <p>Io credo di esserne la dimostrazione personale. A ventun anni mi sono candidato alle comunali di Lamezia Terme, all'ultimo momento, senza grandi risorse, con una campagna costruita sul porta a porta e sulla presenza fisica nel territorio. Circa 130 voti. Un risultato che nessuno si aspettava, che io per primo non mi aspettavo.</p>
+          <p>Non è un numero grande, non sono stato eletto. Ma è un numero onesto. È fatto di persone che hanno guardato un ragazzo di ventun anni e hanno pensato: <em>questo parla di cose che conosco. Questo parla del mio quartiere, della mia strada, della mia città.</em></p>
+          <p>Ecco cosa è la Lega in Calabria. Non è un'invasione del Nord. È un riconoscimento: che i problemi di chi vive al Sud meritano le stesse soluzioni serie, gli stessi strumenti, la stessa voce.</p>
+          <p>E che un'idea, se è giusta, non ha latitudine.</p>
+
+          <p class="firma">Carmine Rubino</p>
+        `
+      }
+    };
+
+    function showArticle(id) {
+      const a = articles[id];
+      if (!a) return;
+      document.getElementById('article-content').innerHTML = `
+        <div class="article-header">
+          <span class="article-category">${a.category}</span>
+          <h1 class="article-title">${a.title}</h1>
+          <p class="article-subtitle">${a.subtitle}</p>
+          <div class="article-meta">
+            <span>${a.date}</span>
+            <span>${a.readtime}</span>
+          </div>
+        </div>
+        <div class="article-body">${a.body}</div>
+      `;
+      showSection('articolo');
+    }
+
     function showSection(name) {
       document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
       document.getElementById('section-' + name).classList.add('active');
