@@ -231,6 +231,68 @@
       padding-bottom: 1px;
     }
 
+    /* ── Chi sono ── */
+    .chisono-section {
+      animation: fadeUp 0.8s ease both;
+      padding-top: 1rem;
+    }
+
+    .chisono-section .section-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .chisono-section h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bio-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .bio-para {
+      border-top: 1px solid var(--border);
+      padding: 2rem 0;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2rem;
+    }
+
+    .bio-para:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .bio-tag {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      padding-top: 0.2rem;
+    }
+
+    .bio-text {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.85;
+    }
+
+    @media (max-width: 600px) {
+      .bio-para { grid-template-columns: 1fr; gap: 0.5rem; }
+    }
+
     /* ── Contatti ── */
     .contatti-section {
       animation: fadeUp 0.8s ease both;
@@ -476,11 +538,39 @@
 
     <!-- CHI SONO -->
     <div id="section-chisono" class="section">
-      <section class="hero">
-        <span class="hero-label">Chi sono</span>
-        <h1>Carmine<br><span class="dim">Rubino</span></h1>
-        <p>Questa sezione è in costruzione. Torna presto per scoprire di più.</p>
-      </section>
+      <div class="chisono-section">
+        <span class="section-label">Chi sono</span>
+        <h2>Carmine<br><span style="color:#333">Rubino</span></h2>
+
+        <div class="bio-block">
+
+          <div class="bio-para">
+            <span class="bio-tag">Le origini</span>
+            <p class="bio-text">Nato nel 2004, cresciuto a Lamezia Terme, nel cuore della Calabria. Studio Ingegneria Informatica e Biomedica all'Università Magna Græcia di Catanzaro, convinto che tecnologia e politica siano due facce della stessa medaglia: entrambe cambiano il mondo, nel bene e nel male, a seconda di chi le maneggia.</p>
+          </div>
+
+          <div class="bio-para">
+            <span class="bio-tag">La scintilla</span>
+            <p class="bio-text">La politica mi ha preso presto. Nel 2015, a undici anni, vidi Matteo Salvini tornare a Lamezia Terme — era la seconda volta in Calabria — e qualcosa scattò. Non sapevo ancora dargli un nome, ma capivo che stava dicendo cose che altri non dicevano. A sedici anni mi feci la prima tessera di partito, quella della Lega. Fu un atto istintivo, quasi naturale.</p>
+          </div>
+
+          <div class="bio-para">
+            <span class="bio-tag">Il campo</span>
+            <p class="bio-text">Nel 2025, a ventun anni, ho fatto il salto: candidato alle elezioni comunali di Lamezia Terme. Una campagna costruita quasi dal nulla, all'ultimo respiro, senza grandi mezzi né grandi certezze. Eppure i voti sono arrivati — circa 130 preferenze che nessuno, me compreso, si aspettava davvero. Un risultato piccolo sulla carta, enorme nella testa di chi sa da dove è partito.</p>
+          </div>
+
+          <div class="bio-para">
+            <span class="bio-tag">Il fischio</span>
+            <p class="bio-text">Nell'ultimo anno ho aggiunto un nuovo capitolo: sono diventato arbitro ufficiale AIA. Il campo insegna cose che i libri non insegnano — la pressione, la solitudine della decisione, il rispetto delle regole anche quando nessuno ti ringrazia.</p>
+          </div>
+
+          <div class="bio-para">
+            <span class="bio-tag">Questo blog</span>
+            <p class="bio-text">Questo blog è il mio spazio per ragionare ad alta voce: sulla politica italiana e internazionale, sulla mia generazione, sul Sud che cambia — o che non vuole cambiare.</p>
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <!-- CONTATTI -->
